@@ -1,0 +1,55 @@
+<style type="text/css">
+    #header { background-color: #ddd; }
+    #footer { background-color: #ddd; }
+    html, body, ul, li, h1, p, div {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+    a { text-decoration: none;
+        color: #222;
+        font: 14px "굴림";
+        text-align: center;
+      }
+      #header li {
+        width: 20%;
+        display: inline-block;
+        text-align: center;
+      }
+      #header li a {
+        display: block;
+        padding: 10px 15px;
+        width: auto;
+      }
+      #body li {
+        float: left;
+        width: 22%;
+        padding: 10px;
+
+      }
+
+      span {
+        display: block;
+      }
+img { width: 100%; }
+span { display: block; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.clear:after { content: ''; display: block; float: none; clear: both; }
+
+#header > ul { border: 1px solid #000000; }
+#header > ul > li > a { border: 1px solid #cccccc; }
+
+#body { width: 80%; float: left;}
+#sidebar {width: 20%; float: left; background-color: #ff0000; }
+#footer { width: 100%; height: 100%; }
+
+legend { visibility: hidden; }
+.thumb { width: 100%; height:150px; }
+.text { height:40px; }
+button { margin-top: 5px; }
+label { color: green; text-shadow: 1px 1px 1px #000; }
+#footer > address { text-align: center; font-style: normal; border-top: 1px solid #000000; height: 80px; line-height: 80px;}
+fieldset { border: 0px; width: auto; margin-right: 500px;}
+#sidebar input { border: 0px; }
+  </style>

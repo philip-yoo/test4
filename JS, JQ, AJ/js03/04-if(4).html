@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+
+    <!-- javascript start -->
+    <script type="text/javascript">
+           var is_korean = true;
+
+           if(is_korean == true){
+            document.write("<h1>한국사람입니다.</h1>");
+           }
+
+           if(is_korean == false){
+            document.write("<h1>한국사람이 아닙니다.</h1>");
+           }
+
+                      if(is_korean){//값 자체가 참이므로 성립된다.
+            document.write("<h1>한국사람입니다.</h1>");
+           }
+
+           if(!is_korean){//"!"는 값을 부정한다. 참을 부정하므로 거짓이다.
+            document.write("<h1>한국사람이 아닙니다.</h1>");
+           }
+
+           var is_japanese = false;
+
+           if (is_japanese != true){
+            document.write("<h1>일본사람이 아닙니다.</h>");
+           }
+
+          if (is_japanese != false){
+            document.write("<h1>일본사람 입니다.</h>");
+           }
+
+           if (is_japanese){ //값 자체가 거짓이므로 성립되지 않는다.
+            document.write("<h1>일본사람이 아닙니다.</h>");
+           }
+
+           if (!is_japanese){//거짓을 부적아혔으므로 참이다.
+            document.write("<h1>일본사람 입니다.</h>");
+           }
+    </script>
+    <!-- javascript end-->
+
+</head>
+
+<body>
+
+</body>
+
+</html>

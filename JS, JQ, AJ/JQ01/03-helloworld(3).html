@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <script type="text/javascript">
+    </script>
+    <!-- javascript end-->
+</head>
+
+<body>
+    <div id="console"></div>
+    <script src="Http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+    /* jQuert 함수에게 시작될 함수를 별도의 함수 정의 없이 직접 전달한다. */
+    jQuery(function($) {
+        var mydiv = $("#console");
+        mydiv.html("<h1>Hello World</h1>");
+    });
+    //두 개 이상의 동시 처리도 가능하다.
+    jQuery(function($) {
+        var mydiv = $("#console");
+        var html = mydiv.html();
+        alert(html);
+    });
+    </script>
+</body>
+
+</html>

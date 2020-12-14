@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <script type="text/javascript">
+    function insertQuestion() {
+        // 내용을 입력받는 대화상자
+        var q = prompt("사칙연산의 수식을 입력하세요. (예:100+50)", "");
+
+        // 입력받은 문자열을 수식으로 변환한다. (내장함수 사용)
+        var answer = eval(q);
+
+        // 사용자가 입력한 질문(q)와 계산결과(answer)를
+        // 하나의 문자열로 연결한다.
+        var result = q + " = " + answer;
+
+        // 출력
+        document.getElementById("question").innerHTML = result;
+    }
+    </script>
+    <!-- javascript end-->
+</head>
+
+<body onload="insertQuestion()">
+    <!-- 페이지가 처음 열려서 웹 브라우저에게 HTML태그의 인식이 완료된 후, 자동으로 insertQuestion() 함수가 호출되도록 함 -->
+    <h1 id="question"></h1>
+</body>
+
+</html>

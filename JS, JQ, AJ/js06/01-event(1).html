@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <script type="text/javascript">
+    /* printResult() 함수 안에서 호출된다. */
+    // 두 수를 더한 값을 리턴하여 주는 함수
+    function sum(x, y) {
+        var z = x + y;
+        return z;
+    }
+    /* input type="button"이 클릭되었을 때 호출한다. */
+    function printResult() {
+        // sum 함수를 호출하여 10+50의 결과를 리턴받는다.
+        var result = sum(10, 50);
+
+        // document.getElementById("question")
+        // --> id가 "question"인 태그요소
+        var mytag = document.getElementById("question");
+
+        // ~의 안에 result 값을 넣는다. --> ~.innerHTML = result;
+        // 이 요소의 안에는 "?"가 들어 있지만, 새롭게 지정된 result값이 "?"를 지우고 자신이 그 자리를 차지한다.
+        mytag.innerHTML = result;
+    }
+    </script>
+    <!-- javascript end-->
+</head>
+
+<body>
+    <h1>10+50 = <span id="question">?</span></h1>
+    <!-- 클릭했을 때, printResult() 함수를 호출한다. -->
+    <input type="button" value="결과보기" onclick="printResult()" />
+</body>
+
+</html>

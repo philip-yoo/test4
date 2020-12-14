@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <script type="text/javascript">
+    //결과 : "NaN"
+    var a = Number("a");
+    document.write("<h1>a = " + a + "</h1>");
+
+    //"NaN" + 1지만 "NaN1" 이 아닌 "NaN"이 된다.
+    var a_sum = a + 1;
+    document.write("<h1>a_sum = " + a_sum + "</h1>");
+
+    //"NaN" + "str"이므로 "NaNstr"이 된다.
+    var a_str = a + "str";
+    document.write("<h1>a_sum = " + a_str + "</h1>");
+    </script>
+    <!-- javascript end-->
+</head>
+
+<body>
+</body>
+
+</html>

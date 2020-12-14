@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <!-- javascript end-->
+</head>
+
+<body>
+    <h1>JSON으로 그룹화된 함수 호출</h1>
+    <input type="button" value="sayEng" onclick="say.eng()" />
+    <input type="button" value="sayKor" onclick="say.kor()" />
+    <h1 id="console"></h1>
+    <script src="Http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+    var say = {
+        name: "Javascript",
+        eng: function() {
+            $("#console").html("Hello " + this.name);
+        },
+        kor: function() {
+            $("#console").html("안녕하세요 " + this.name);
+        }
+    };
+    </script>
+</body>
+
+</html>

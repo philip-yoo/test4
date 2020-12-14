@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <script type="text/javascript">
+    var sum1 = 0;
+    var sum2 = 0;
+
+    for (var i = 1; i <= 100; i++) {
+        //2로 나눈 나머지가 0이면 짝수
+        if (i % 2 == 0) {
+            sum1 += i;
+        } else {
+            sum2 += i;
+        }
+
+    }
+    document.write("<h1>짝수들의 합 = " + sum1 + "</h1>");
+    document.write("<h1>홀수들의 합 = " + sum2 + "</h1>");
+    </script>
+    <!-- javascript end-->
+</head>
+
+<body>
+</body>
+
+</html>

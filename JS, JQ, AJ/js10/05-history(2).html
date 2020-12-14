@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <script type="text/javascript">
+    function random(n1, n2) {
+        return parseInt(Math.random() * (n2 - n1 + 1)) + n1;
+    }
+    /* 5자리의 인증번호를 id값이 "auth" 인 요소에게 출력 */
+    function authNo() {
+        var value = "";
+        for (var i = 0; i < 5; i++) {
+            value += random(0, 9);
+        }
+        document.getElementById("auth").innerHTML = value;
+    }
+
+    /*페이지 새로 고침*/
+    function refresh() {
+        location.reload();
+    }
+    </script>
+    <!-- javascript end-->
+</head>
+
+<body>
+    <h1>History 객체</h1>
+    <a href="#" onclick="history.back(); return false;">이전 페이지로 이동</a>
+</body>
+
+</html>

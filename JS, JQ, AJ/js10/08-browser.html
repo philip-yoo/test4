@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <script type="text/javascript">
+    /* 브라우저의 이름을 리턴하는 함수 */
+    function getWebBrowserName() {
+        //userAgent값을 모두 소문자로 변환하여 변수에 대입
+        var agt = navigator.userAgent.toLowerCase();
+        document.write(agt);
+
+        //특정 브라우저의 이름이 검색되는지 여부를 판별하여
+        // 특정 이름이 검색 될 경우, 브라우저 이름을 의미하는 문자열을 리턴
+        if (agt.indexOf("edge") != -1) {
+            // Window10 이상 Window Edge 브라우저
+            return "Edge";
+        } else if (agt.indexOf("chrome") != -1) {
+            return "chrome";
+        } else if (agt.indexOf("opera") != -1) {
+            return "opera";
+        } else if (agt.indexOf("firefox") != -1) {
+            return "Firefox";
+        } else if (agt.indexOf("safari") != -1) {
+            return "Safari";
+        } else if (agt.indexOf("skipstone") != -1) {
+            return "SkipStone";
+        } else if (agt.indexOf("msie") != -1 || agt.indexOf("trident") != -1) {
+            return "Internet Exp;orer";
+        } else if (agt.indexOf("netscape") != -1) {
+            return "Netscape";
+        } else {
+            return "Unknown";
+        }
+    }
+    document.write("<h1>" + getWebBrowserName() + "</h1>");
+    </script>
+    <!-- javascript end-->
+</head>
+
+<body>
+</body>
+
+</html>

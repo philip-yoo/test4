@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <script type="text/javascript">
+    /* 객체 안에 맴버변수와 함수를 포함시키기
+     */
+    // 비어 있는 객체의 생성
+    var people = {};
+
+    // 객체 안에 변수를 포함시키기
+    people.name = "박지윤";
+    people.gender = "남자";
+
+    // 객체 안에 함수를 포함시키기
+    people.sayName = function() {
+        //객체 안에 포함된 함수에서, 멤버변수에 접근하기 위해서는
+        //반드시 "this." 이라는 특수 예약어를 사용해야 한다.
+        document.write("<h1>" + this.name + "</h1>");
+    };
+
+    people.sayGender = function() {
+        document.write("<h1>" + this.gender + "</h1>");
+    };
+
+    people.saySomething = function(msg) {
+        document.write("<h1>" + msg + "</h1>");
+    };
+
+    people.getName = function() {
+        return this.name;
+    };
+
+    people.getGender = function() {
+        return this.gender;
+    };
+
+    people.sayInfo = function() {
+        document.write("<h1>" + this.getName() + "님은 " + this.getGender() + "입니다.</h1>");
+    };
+
+    // 객체 안의 메서드 호출 예제
+    people.sayName();
+    people.sayGender();
+    people.saySomething("Hello Javascript");
+    people.sayInfo();
+    </script>
+    <!-- javascript end-->
+</head>
+
+<body>
+</body>
+
+</html>

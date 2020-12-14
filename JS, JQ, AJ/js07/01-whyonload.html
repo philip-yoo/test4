@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <script type="text/javascript">
+    function doPrint(num) {
+        var msg = "doPrint()가 " + num + "회 실행되었습니다.";
+        alert(msg);
+        document.getElementById("myid").innerHTML = msg;
+    }
+    // 첫 번째 메시지 박스를 호출하는 시점
+    doPrint(1);
+    </script>
+    <!-- javascript end-->
+</head>
+
+<body>
+    <script type="text/javascript">
+    // 두 번째 메시지 박스를 호출하는 시점
+    doPrint(2);
+    </script>
+    <h1 id="myid">안녕하세요.</h1>
+    <script type="text/javascript">
+    // 세 번째 메시지 박스를 호출하는 시점
+    doPrint(3);
+    </script>
+</body>
+
+</html>

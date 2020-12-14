@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Hello Javascript</title>
+    <!-- javascript start -->
+    <!-- javascript end-->
+</head>
+
+<body>
+    <h1>둘리의 과목점수</h1>
+    <ol id="list"></ol>
+    <script src="Http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var dolly = [
+            { subject: "HTML5", point: 78 },
+            { subject: "CSS", point: 82 },
+            { script: "Javascript", point: 63 }
+        ];
+
+        //JSON 데이터의 내용을 목록정의 태그로 구성
+        var tag = "";
+        for (var i = 0; i < dolly.length; i++) {
+            tag += "<li>" + dolly[i].subject + " : " + dolly[i].point + "</li>";
+        }
+        $("#list").html(tag);
+    });
+    </script>
+</body>
+
+</html>

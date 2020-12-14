@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page trimDirectiveWhitespaces="true" %>
+<!doctype html>
+<%
+// 파라미터 수신에 사용할 문자셋 설정(각페이지당 최 상단에서 1회 설정)
+request.setCharacterEncoding("UTF-8");
+
+//파라미터 받기
+String ans = request.getParameter("ans");
+%>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My JSP Page</title>
+    <!-- Twitter Bootstrap3 & jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdm.com/bootstrap/3.3.1/css/
+    bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdm.com/bootstrap/3.3.1/css/
+    bootstrap-theme.min.css" />
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdm.com/bootstrap/3.3.1/css/
+    bootstrap.min.css"></script>
+</head>
+
+<body>
+    
+</body>
+
+</html>

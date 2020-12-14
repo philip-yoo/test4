@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>My Web Page</title>
+    <style type="text/css">
+    /* 공동속성
+        ---------------------------------------------*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    div{width: 100px; height: 100px;}
+    #box1{
+        background-color: #ff0000;
+
+    }
+    #box2{
+        background-color: #00ff00;
+        /* 부모요소의 가장자리를 기준으로 이동*/
+        /* 주변 요소들은 이 요소의 존재 사실을 모른다. */
+        position: absolute;
+        left: 150px;
+        top: 150px;
+        z-index: 1;
+
+    }
+    #box3{
+        background-color: #0000ff;
+        position: absolute;
+        left: 110px;
+        top: 110px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        박스1
+    </div>
+    <div id="box2">
+        박스2
+    </div>
+    <div id="box3">
+        박스3
+    </div>
+
+
+</body>
+
+</html>
